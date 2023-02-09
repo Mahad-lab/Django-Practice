@@ -15,3 +15,8 @@ Run server
 ```
 python manage.py runserver
 ```
+
+Create app
+```
+python manage.py startapp <app name>
+```
