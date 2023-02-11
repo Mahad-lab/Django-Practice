@@ -15,6 +15,20 @@
     <h1>Home</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At accusamus reiciendis qui perferendis. Sed repellat assumenda eveniet dignissimos nesciunt laborum tenetur cumque animi, ipsum voluptatibus error odio, quisquam quis iste!</p>
 
+    <h3> User name : {{ name }}</h3>
+    <h3> User age : {{ age }}</h3>
+
+    {% for fruit in fav_fruits %}
+    <h3> User favorite fruits {{ forloop.counter }} : {{ fruit }}</h3>
+    {% endfor %}
+
+    {% if age > 18 %}
+    <h3> User is adult : Yes </h3>
+    {% else %}
+    <h3> User is adult : No </h3>
+    {% endif %}
+
+
     <a href="/about">About</a>
 
 </body>
