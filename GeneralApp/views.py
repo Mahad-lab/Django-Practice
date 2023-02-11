@@ -7,6 +7,3 @@ def home(request):
 
 def about(request):
     return render(request, 'about.html')
-
-def htmlpage(request):
-    return render(request, 'page.html')
