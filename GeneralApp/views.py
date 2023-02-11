@@ -1,12 +1,12 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+# from django.http import HttpResponse
 
 
 def home(request):
-    return HttpResponse('HOME PAGE <a href="/about">about</a>')
+    return render(request, 'index.html')
 
 def about(request):
-    return HttpResponse('ABOUT PAGE <a href="/">Home</a>')
+    return render(request, 'about.html')
 
 def htmlpage(request):
     return render(request, 'page.html')
